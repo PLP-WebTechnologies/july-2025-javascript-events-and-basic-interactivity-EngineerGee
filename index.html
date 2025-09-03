@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Interactivity Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Interactive Webpage</h1>
+    <button id="modeToggle">🌞 Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling Demo -->
+    <section>
+      <h2>Click the Button Counter</h2>
+      <button id="counterBtn">Click Me!</button>
+      <p>Count: <span id="count">0</span></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>FAQ (Collapsible)</h2>
+      <div class="faq">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is a programming language used to make web pages interactive.</p>
+      </div>
+      <div class="faq">
+        <h3 class="faq-question">What is DOM?</h3>
+        <p class="faq-answer">The Document Object Model (DOM) represents the structure of a webpage.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" required>
+          <span class="error" id="nameError"></span>
+        </label><br>
+        <label>
+          Email:
+          <input type="email" id="email" required>
+          <span class="error" id="emailError"></span>
+        </label><br>
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <span class="error" id="passwordError"></span>
+        </label><br>
+        <button type="submit">Register</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
